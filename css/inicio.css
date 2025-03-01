@@ -2,3 +2,32 @@
     margin: 0px;
     padding: 0px;
 }
+
+.ejemplo{
+    border-width: 1px;
+    border-color: #000000;
+    border-style: dotted;
+    border: 1px solid #0000ff;
+    border-top: 2px double #ff0000;
+    border-bottom: 10px dotted #00ff00;
+    border-radius: 15px;
+    border-bottom-right-radius: 0px ;
+    border-top-left-radius: 50%;
+    width: 300px;
+    height: 200px;
+    min-width: 200px;
+    max-width: 300px;
+    margin: 16px;
+    margin: 25px 100px;
+    margin: 25px 100px 150px 200px;
+    margin-top: 25px;
+    margin-right: 100px;
+    margin-bottom: 150px;
+    margin-left: 200px;
+    margin-block: 50px;
+    margin-block-start: 50px;
+    margin-block-end: 25px;
+    margin-inline: 100px;
+    margin: auto;
+    padding: 50px;
+}
