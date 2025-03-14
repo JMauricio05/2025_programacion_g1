@@ -9,10 +9,11 @@ if ($figura == 'cuadrado') {
     $cuadrado->set('arista', $arista);
     $area = $cuadrado->toString();
 } else if ($figura == 'triangulo') {
-    $triangulo = new Triangulo();
-    $triangulo->set('base', $_GET['base']);
+    $triangulo = new Triangulo(12);
+    // $triangulo->set('base', $_GET['base']);
     $triangulo->set('altura', $_GET['altura']);
     $area = $triangulo->toString();
+    $figura = Triangulo::nombreFigura();
 }
 ?>
 <!DOCTYPE html>

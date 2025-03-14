@@ -68,6 +68,10 @@ class Triangulo extends Figura
     protected $base;
     protected $altura;
 
+    function __construct($base){
+        $this->base = $base;    
+    }
+
     function area()
     {
         return ($this->base * $this->altura) / 2;
@@ -77,6 +81,12 @@ class Triangulo extends Figura
     {
         $area = $this->area();
         return "Triangulo con area $area";
+    }
+
+    static function nombreFigura(){
+        $t = new Triangulo(12);
+        $area = $t->area();
+        return "Triangulo";
     }
 }
 
