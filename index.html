@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Figuras</title>
+  </head>
+  <body>
+    <section>
+        <form action="areas.php" method="post">
+            <input type="hidden" name="figura" value="cuadrado">
+            <fieldset>
+                <legend>Area del cuardado</legend>
+                <div>
+                    <label>Ingrese la arista del cuadrado:</label>
+                    <input type="number" name="arista" min="0" required>
+                </div>
+            </fieldset>
+            <button type="submit">Calcular</button>
+        </form>
+        
+        <form action="areas.php" method="get">
+            <input type="hidden" name="figura" value="triangulo">
+            <fieldset>
+                <legend>Area del triangulo</legend>
+                <div>
+                    <label>Ingrese la altura:</label>
+                    <input type="number" name="altura" min="0" required>
+                </div>
+                <div>
+                    <label>Ingrese la base:</label>
+                    <input type="number" name="base" min="0" required>
+                </div>
+            </fieldset>
+            <button type="submit">Calcular</button>
+        </form>
+    </section>
+  </body>
+</html>
