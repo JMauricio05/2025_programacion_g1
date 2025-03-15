@@ -1,6 +1,7 @@
 <?php
 include 'oop.php';
-// require 'oop.php';
+//require 'oop.php';
+
 $figura = !empty($_POST['figura']) ? $_POST['figura'] : $_GET['figura'];
 $area = '';
 if ($figura == 'cuadrado') {
