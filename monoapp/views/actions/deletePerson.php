@@ -18,6 +18,7 @@ $res = $controller->removePerson($_GET['id']);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eliminar datos de la persona</title>
+    <link rel="stylesheet" href="../css/acciones.css">
 </head>
 
 <body>
@@ -25,13 +26,13 @@ $res = $controller->removePerson($_GET['id']);
     <?php
     switch ($res) {
         case 'yes':
-            echo '<p>Datos borrados</p>';
+            echo '<p class="msg-ok">Datos borrados</p>';
             break;
         case 'not':
-            echo  '<p>No se pudo borrar los datos</p>';
+            echo  '<p class="msg-error">No se pudo borrar los datos</p>';
             break;
         default:
-            echo  '<p>El registro no existe</p>';
+            echo  '<p class="msg-error">El registro no existe</p>';
             break;
     }
     ?>

@@ -24,6 +24,14 @@ $persons = $controller->getAllPersons();
     <table>
         <thead>
             <tr>
+                <td>
+                    <form>
+                        <input type="text" name="search" placeholder="Buscar por nombre" require>
+                        <button type="submit">Buscar</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
                 <th>Nombre</th>
                 <th>Email</th>
                 <th>Edad</th>
@@ -41,7 +49,9 @@ $persons = $controller->getAllPersons();
                 echo '  <td>' . $person->mayorEdad() . '</td>';
                 echo '  <td>';
                 echo '      <a href="form_person.php?id=' . $person->get('id') . '">Modificar</a>';
-                echo '      <a href="actions/deletePerson.php?id=' . $person->get('id') . '">Eliminar</a>';
+                echo '      <a href="actions/deletePerson.php?id=' . $person->get('id') . '">';
+                echo '          <img src="../resources/delete.svg" alt="Borrar registro">';
+                echo '      </a>';
                 echo '  </td>';
                 echo '</tr>';
             }
