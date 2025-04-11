@@ -43,4 +43,10 @@ class PersonasController
         $res =  $model->delete();
         return $res ? 'yes' : 'not';
     }
+
+    public function getPersona($id){
+        $model = new Persona();
+        $model->set('id', $id);
+        return $model->find();
+    }
 }
