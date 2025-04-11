@@ -63,5 +63,31 @@ class Persona extends Model
         return $res;
     }
 
-    public function delete() {}
+    public function delete()
+    {
+        $conexDb = new ConexDB();
+        $sql = "delete from personas where id=" . $this->id;
+        $res = $conexDb->exeSQL($sql);
+        $conexDb->close();
+        return $res;
+    }
+
+    public function find(){
+        $conexDb = new ConexDB();
+        $sql = "select * from personas where id=" . $this->id;
+        $res = $conexDb->exeSQL($sql);
+        $persona = null;
+        if($res->num_rows>0){
+            while($row = $res->fetch_assoc()){
+                $persona = new Persona();
+                $persona->set('id', $row['id']);
+                $persona->set('nombre', $row['nombre']);
+                $persona->set('edad', $row['edad']);
+                $persona->set('email', $row['email']);
+                break;
+            }
+        }
+        $conexDb->close();
+        return $persona;        
+    }
 }

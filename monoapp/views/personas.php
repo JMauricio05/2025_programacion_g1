@@ -41,6 +41,7 @@ $persons = $controller->getAllPersons();
                 echo '  <td>' . $person->mayorEdad() . '</td>';
                 echo '  <td>';
                 echo '      <a href="form_person.php?id=' . $person->get('id') . '">Modificar</a>';
+                echo '      <a href="actions/deletePerson.php?id=' . $person->get('id') . '">Eliminar</a>';
                 echo '  </td>';
                 echo '</tr>';
             }

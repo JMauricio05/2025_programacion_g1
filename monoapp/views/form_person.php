@@ -1,5 +1,5 @@
 <?php
-$id = $_GET['id'];
+$id = empty($_GET['id']) ? null : $_GET['id'];
 ?>
 <!DOCTYPE html>
 <html lang="es">
