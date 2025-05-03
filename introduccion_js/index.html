@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a js</title>
+</head>
+
+<body>
+    <h1>Introducción a js</h1>
+
+    <script>
+        //alert("Hola mundo!!!");
+        /**
+         * Varias
+         */
+        console.log(12345)
+
+
+        //var, let o const
+        var nombre = "Juan";
+        let apellido = 'Gomez';
+        let edad = 12;
+        let salario = 25000.50;
+        let mayorEdad = true; //false
+
+        apellido = "Perez";
+
+        const email = "emeail@test.com";
+        // email = "12233@tst.com";
+
+        console.log("Nombre: " + nombre + " " + apellido);
+        console.log(`Nombre: ${nombre} ${apellido}`);
+        console.log(apellido.toUpperCase());
+
+        let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // numeros = Array(10);
+        // numeros = "1,2,3,4";
+        let lista = ['a', 2, 2.5, true, [], {}];
+
+        let persona = {
+            nombre: "Ana",
+            apellido: "Gomez",
+            edad: 30,
+            jobs: ['Cine', 'Musica']
+        };
+        console.log(persona.nombre, persona.apellido);
+
+        if (persona.edad < 18) {
+            //code.....
+        } else if (persona.edad < 25) {
+            //......
+        } else {
+            //......
+        }
+
+        /**
+         * && and
+         * || or
+         * ! negación
+         * == igual (Evalua el valor)
+         * === igual (Evalua el valor y el tipo de dato)
+         * >= mayor o igual
+         * <= menor o igual
+         * != diferente
+         * > mayor que
+         * < menor que
+         */
+        console.log(2 == '2');
+        console.log(2 === '2');
+
+        
+
+
+    </script>
+</body>
+
+</html>
