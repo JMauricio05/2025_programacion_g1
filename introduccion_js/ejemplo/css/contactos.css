@@ -1,0 +1,36 @@
+.error {
+    margin: 0px;
+    color: #ff0000;
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: top;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+}
+
+.modal form {
+    border: 1px solid #000;
+    border-radius: 16px;
+    box-shadow: 0px 0px 2px 5px #535353;
+    padding: 16px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cerrarModal {
+    /* display: none; */
+    top: -100vh;
+}
