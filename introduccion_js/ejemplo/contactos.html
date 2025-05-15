@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+
+    <link rel="stylesheet" href="css/contactos.css">
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Lista de contactos</h1>
+        </header>
+        <section>
+            <button id="crearBtn">Crear</button>
+            <div>
+                <table id="contactosTable">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Teléfono</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="4">No hay datos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal cerrarModal">
+                <form name="contactoForm">
+                    <div>
+                        <label>Nombre:</label>
+                        <input type="text" name="nombre" maxlength="50" onkeyup="nombreKeyUp()">
+                        <p id="nombreError" class="error">Este campo es obligatorio</p>
+                    </div>
+                    <div>
+                        <label>Email:</label>
+                        <input type="email" name="correo" required>
+                    </div>
+                    <div>
+                        <label>Teléfono:</label>
+                        <input type="text" name="telefono" required>
+                    </div>
+                    <div>
+                        <button>Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </section>
+    
+
+    <script src="js/contactos.js"></script>
+</body>
+</html>
