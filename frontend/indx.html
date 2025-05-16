@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personas</title>
+    <link rel="stylesheet" href="css/personas.css">
+</head>
+<body>
+    <section>
+        <div>
+            <form name="personaForm">
+                <div>
+                    <label for="">Nombre</label>
+                    <input type="text" name="nombreInput">
+                </div>
+                <div>
+                    <label for="">Email</label>
+                    <input type="email" name="emailInput">
+                </div>
+                <div>
+                    <label for="">Edad</label>
+                    <input type="number" name="edadInput">
+                </div>
+                <div>
+                    <button type="submit">Guardar</button>
+                    <button type="reset">Cancelar</button>
+                </div>
+            </form>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="4">
+                            <button>Registrar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Edad</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="4">No hay datos</td>
+                    </tr>
+                    <tr>
+                        <td>Pepe</td>
+                        <td>Pepe@test.com</td>
+                        <td>32</td>
+                        <td>
+                            <button>Modificar</button>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <script src="js/personas.js"></script>
+</body>
+</html>
