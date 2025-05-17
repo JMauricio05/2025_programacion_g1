@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personas</title>
     <link rel="stylesheet" href="css/personas.css">
 </head>
+
 <body>
     <section>
-        <div>
+        <div id="personaFormContent" class="ocultarForm">
             <form name="personaForm">
+                <header>
+                    <h2 id="tituloForm"></h2>
+                </header>
+                <div>
+                    <label for="">Id</label>
+                    <input type="number" name="idInput">
+                </div>
                 <div>
                     <label for="">Nombre</label>
                     <input type="text" name="nombreInput">
@@ -24,19 +33,20 @@
                 </div>
                 <div>
                     <button type="submit">Guardar</button>
-                    <button type="reset">Cancelar</button>
+                    <button type="reset" id="cancelarBtn">Cancelar</button>
                 </div>
             </form>
         </div>
         <div>
-            <table>
+            <table id="personasTable">
                 <thead>
                     <tr>
                         <td colspan="4">
-                            <button>Registrar</button>
+                            <button id="registrarBtn">Registrar</button>
                         </td>
                     </tr>
                     <tr>
+                        <th>ID</th>
                         <th>Nombre</th>
                         <th>Email</th>
                         <th>Edad</th>
@@ -47,15 +57,6 @@
                     <tr>
                         <td colspan="4">No hay datos</td>
                     </tr>
-                    <tr>
-                        <td>Pepe</td>
-                        <td>Pepe@test.com</td>
-                        <td>32</td>
-                        <td>
-                            <button>Modificar</button>
-                            <button>Eliminar</button>
-                        </td>
-                    </tr>
                 </tbody>
             </table>
         </div>
@@ -64,4 +65,5 @@
 
     <script src="js/personas.js"></script>
 </body>
+
 </html>
